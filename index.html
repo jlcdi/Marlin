@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Marlin firmware for RUMBA by jlcdi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Marlin firmware for RUMBA</h1>
+      <h2 class="project-tagline">Marlin RUMBA LCD extruders</h2>
+      <a href="https://github.com/jlcdi/Marlin" class="btn">View on GitHub</a>
+      <a href="https://github.com/jlcdi/Marlin/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/jlcdi/Marlin/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <p>This version is for RUMBA boards</p>
+
+<p>It is setup for:</p>
+
+<ul>
+<li>3 extruders</li>
+<li>The RepRapDiscount FULL GRAPHIC Smart Controller (quadratic white PCB)       <a href="http://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller">http://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller</a>
+</li>
+<li>French language</li>
+</ul>
+
+<p>I will publish evolutions and update here above specs according to the evolution of my personal config.</p>
+
+<p>This version is based on the following:</p>
+
+<h1>
+<a id="marlin-3d-printer-firmware" class="anchor" href="#marlin-3d-printer-firmware" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Marlin 3D Printer Firmware</h1>
+
+<h2>
+<a id="release-candidate----marlin-110-rc5-rcbugfix---03-april-2016" class="anchor" href="#release-candidate----marlin-110-rc5-rcbugfix---03-april-2016" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Release Candidate -- Marlin 1.1.0-RC5 RCBugFix - 03 April 2016</h2>
+
+<p><strong>Not for production use – use with caution!</strong></p>
+
+<p>You can download earlier versions of Marlin on the <a href="https://github.com/MarlinFirmware/Marlin/releases">Releases page</a>. (The latest "stable" release of Marlin is 1.0.2-1.)</p>
+
+<p>You'll always find the latest Release Candidate in the <a href="https://github.com/MarlinFirmware/Marlin/tree/RC">"RC" branch</a>. Bugs that we find in the current Release Candidate are patched in the <a href="https://github.com/MarlinFirmware/Marlin/tree/RC">"RCBugFix" branch</a>, so during beta testing this is where you can always find the latest code on its way towards release.</p>
+
+<p>Future development (Marlin 1.2 and beyond) takes place in the <a href="https://github.com/MarlinFirmware/MarlinDev/">MarlinDev repository</a>.</p>
+
+<h2>
+<a id="recent-changes" class="anchor" href="#recent-changes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Recent Changes</h2>
+
+<ul>
+<li>
+<p>RC4 - 24 Mar 2016</p>
+
+<ul>
+<li>Many lingering bugs and nagging issues addressed</li>
+<li>Improvements to LCD menus, CoreXY/CoreXZ, Delta, Bed Leveling, and more…</li>
+</ul>
+</li>
+<li>
+<p>RC3 - 01 Dec 2015</p>
+
+<ul>
+<li>A number of language sensitive strings have been revised</li>
+<li>Formatting of the LCD display has been improved to handle negative coordinates better</li>
+<li>Various compiler-related issues have been corrected</li>
+</ul>
+</li>
+<li>
+<p>RC2 - 29 Sep 2015</p>
+
+<ul>
+<li>File styling reverted</li>
+<li>LCD update frequency reduced</li>
+</ul>
+</li>
+<li>
+<p>RC1 - 19 Sep 2015</p>
+
+<ul>
+<li>Published for testing</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="submitting-patches" class="anchor" href="#submitting-patches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Submitting Patches</h2>
+
+<p>Proposed patches should be submitted as a Pull Request against the <a href="https://github.com/MarlinFirmware/Marlin/tree/RCBugFix">RCBugFix</a> branch.</p>
+
+<ul>
+<li>Don't submit new feature proposals. The RCBugFix branch is for fixing bugs in existing features.</li>
+<li>Do submit questions and concerns. The "naive" question is often the one we forget to ask.</li>
+<li>Follow the proper coding style. Pull requests with styling errors will be delayed. See our <a href="https://github.com/MarlinFirmware/Marlin/wiki/DNE-Coding-Standards">Coding Standards</a> page for more information.</li>
+</ul>
+
+<h2>
+<a id="current-status-testing" class="anchor" href="#current-status-testing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Current Status: Testing</h2>
+
+<p>Please test this firmware and inform us if it misbehaves in any way. Volunteers are standing by!</p>
+
+<p><a href="https://scan.coverity.com/projects/2224"><img src="https://scan.coverity.com/projects/2224/badge.svg" alt="Coverity Scan Build Status"></a>
+<a href="https://travis-ci.org/MarlinFirmware/MarlinDev"><img src="https://travis-ci.org/MarlinFirmware/MarlinDev.svg" alt="Travis Build Status"></a></p>
+
+<h5>
+<a id="repraporg-wiki-page" class="anchor" href="#repraporg-wiki-page" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="http://reprap.org/wiki/Marlin">RepRap.org Wiki Page</a>
+</h5>
+
+<h2>
+<a id="credits" class="anchor" href="#credits" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Credits</h2>
+
+<p>The current Marlin dev team consists of:</p>
+
+<ul>
+<li>Scott Lahteine [<a href="https://github.com/thinkyhead" class="user-mention">@thinkyhead</a>] - English</li>
+<li>[<a href="https://github.com/Wurstnase" class="user-mention">@Wurstnase</a>] - Deutsch, English</li>
+<li>F. Malpartida [<a href="https://github.com/fmalpartida" class="user-mention">@fmalpartida</a>] - English, Spanish</li>
+<li>[<a href="https://github.com/CONSULitAS" class="user-mention">@CONSULitAS</a>] - Deutsch, English</li>
+<li>[<a href="https://github.com/maverikou" class="user-mention">@maverikou</a>]</li>
+<li>Chris Palmer [<a href="https://github.com/nophead" class="user-mention">@nophead</a>]</li>
+<li>[<a href="https://github.com/paclema" class="user-mention">@paclema</a>]</li>
+<li>Edward Patel [<a href="https://github.com/epatel" class="user-mention">@epatel</a>] - Swedish, English</li>
+<li>Erik van der Zalm [<a href="https://github.com/ErikZalm" class="user-mention">@ErikZalm</a>]</li>
+<li>David Braam [<a href="https://github.com/daid" class="user-mention">@daid</a>]</li>
+<li>Bernhard Kubicek [<a href="https://github.com/bkubicek" class="user-mention">@bkubicek</a>]</li>
+<li>Roxanne Neufeld [<a href="https://github.com/Roxy-3DPrintBoard" class="user-mention">@Roxy-3DPrintBoard</a>] - English</li>
+</ul>
+
+<p>More features have been added by:</p>
+
+<ul>
+<li>Alberto Cotronei [<a href="https://github.com/MagoKimbra" class="user-mention">@MagoKimbra</a>]</li>
+<li>Lampmaker,</li>
+<li>Bradley Feldman,</li>
+<li>and others...</li>
+</ul>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
+
+<p>Marlin is published under the <a href="/LICENSE">GPL license</a> because we believe in open development. The GPL comes with both rights and obligations. Whether you use Marlin firmware as the driver for your open or closed-source product, you must keep Marlin open, and you must provide your compatible Marlin source code to end users upon request. The most straightforward way to comply with the Marlin license is to make a fork of Marlin on Github, perform your modifications, and direct users to your modified fork.</p>
+
+<p>While we can't prevent the use of this code in products (3D printers, CNC, etc.) that are closed source or crippled by a patent, we would prefer that you choose another firmware or, better yet, make your own.</p>
+
+<p><a href="https://flattr.com/submit/auto?user_id=ErikZalm&amp;url=https://github.com/MarlinFirmware/Marlin&amp;title=Marlin&amp;language=&amp;tags=github&amp;category=software"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this git repo"></a></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/jlcdi/Marlin">Marlin firmware for RUMBA</a> is maintained by <a href="https://github.com/jlcdi">jlcdi</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
